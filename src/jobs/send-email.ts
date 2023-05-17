@@ -5,8 +5,8 @@ interface Handle {
   email: string;
 }
 
-export const registrationEmailJob = {
-  key: "registration-email-job",
+export const sendEmailJob = {
+  key: "send-email-job",
   async handle({ data }: any) {
     await transporter().sendMail({
       from: "Queue Test <queue.test@gmail.com>",

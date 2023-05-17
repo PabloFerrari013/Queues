@@ -8,7 +8,7 @@ interface SendEmailUseCaseRequest {
 
 export class SendEmailUseCase {
   async execute({ email, name }: SendEmailUseCaseRequest) {
-    await queues.add("registration-email-job", {
+    await queues.add("send-email-job", {
       email,
       name,
     });

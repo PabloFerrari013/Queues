@@ -1,9 +1,9 @@
 import Queue from "bull";
-import { registrationEmailJob } from "../jobs/registration-email";
+import { sendEmailJob } from "../jobs/send-email";
 import { env } from "../env";
 
 const jobs = {
-  registrationEmailJob,
+  sendEmailJob,
 };
 
 export const queues = Object.values(jobs).map((job) => {

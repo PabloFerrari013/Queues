@@ -4,10 +4,10 @@ import { env } from "../env";
 export function transporter() {
   return nodemailer.createTransport({
     host: env.MAILTRAP_HOST,
-    port: env.MAILTRAP_HOST_PORT,
+    port: env.MAILTRAP_PORT,
     auth: {
-      user: env.MAILTRAP_HOST_USER,
-      pass: env.MAILTRAP_HOST_PASS,
+      user: env.MAILTRAP_USER,
+      pass: env.MAILTRAP_PASS,
     },
   });
 }

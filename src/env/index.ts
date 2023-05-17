@@ -5,9 +5,9 @@ const envSchema = z.object({
   PORT: z.coerce.number().default(3333),
 
   MAILTRAP_HOST: z.string(),
-  MAILTRAP_HOST_PORT: z.coerce.number(),
-  MAILTRAP_HOST_USER: z.string(),
-  MAILTRAP_HOST_PASS: z.string(),
+  MAILTRAP_PORT: z.coerce.number(),
+  MAILTRAP_USER: z.string(),
+  MAILTRAP_PASS: z.string(),
 
   REDIS_PORT: z.coerce.number(),
   REDIS_HOST: z.string(),
